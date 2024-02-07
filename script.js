@@ -45,6 +45,7 @@
 
 const movieTitleInput = document.getElementById("movie-title-input");
 const movieResultContainer = document.getElementById("movie-result");
+const tableHead = document.querySelector("#movieTable thead");
 
 // fetch the data from the API
 async function fetchMovieData(movieTitle) {
@@ -64,7 +65,7 @@ function formatMovieData(movieData) {
 
   const movieDetails = document.getElementById("movieTable").getElementsByTagName("tbody")[0];
   movieDetails.innerHTML = ""; // To clear the table
-  
+
   // will show the movie title, year and poster first (outside the table)
   const formatedData = `
     <h2>${movieTitle} (${movieYear})</h2>
@@ -83,6 +84,9 @@ function formatMovieData(movieData) {
     <td>${moviePlot}</td>
   `;
   movieDetails.appendChild(formatedData2); // Display the second part
+
+  // Show the table head after displaying movie details
+  tableHead.classList.remove("hidden");
 }
 
 function displayMovieData(movieTitle){

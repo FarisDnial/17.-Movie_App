@@ -50,6 +50,10 @@ input {
   background-color: #ec695f;
 }
 
+.hidden {
+  display: none; /* Hide the table head initially */
+}
+
 table {
   border-collapse: collapse;
   text-align: center;
