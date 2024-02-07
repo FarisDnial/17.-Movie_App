@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Movie App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Movie Search</h1>
+  <img src="popcorn.jpg" alt="popcorn" width="180" height="180">
+  <label for="movie-title-input">Enter a movie title:</label>
+  <br>
+  <input type="text" id="movie-title-input" name="movie-title" placeholder="Enter a movie name">
+  <button id="submit" onclick="findMovie()">Submit</button>
+  <br>
+  <div id="movie-result"></div>
+
+  <table id="movieTable">
+    <thead>
+      <tr>
+        <th>Director</th>
+        <th>Released Date</th>
+        <th>Ratings</th>
+        <th>The Plot</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
